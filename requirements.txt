@@ -1,0 +1,8 @@
+Django>=4.2,<5.0
+gunicorn
+psycopg[binary]
+dj-database-url
+whitenoise[brotli]
+django-environ
+django_ratelimit
+python-dotenv
