@@ -1,0 +1,16 @@
+{% extends "accounts/base.html" %}
+{% load static %}
+
+{% block content %}
+  <div style="max-width: 500px; margin: 0 auto; padding-top: 60px; text-align: center;">
+    {% if new %}
+      <h2>One more step!</h2>
+      <p>A verification code was sent to <strong>{{ email }}</strong>.</p>
+      <p>Check your inbox and enter the code to activate your account.</p>
+    {% elif confirmed %}
+      <h2>You're Verified 🎉</h2>
+      <p><strong>{{ email }}</strong> is now active.</p>
+      <a href="{% url 'accounts:login' %}">Go to Login</a>
+    {% endif %}
+  </div>
+{% endblock %}
