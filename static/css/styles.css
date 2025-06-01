@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1c1c1e;
+  color: #f5f5f7;
+}
+
+a {
+  color: #4ecdc4;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.site-header {
+  background: #111;
+  padding: 20px;
+}
+.site-header .logo {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.site-header nav a {
+  margin: 0 15px;
+  color: #f5f5f7;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.main-content {
+  padding: 40px 20px;
+  min-height: 400px;
+}
+
+.site-footer {
+  background: #111;
+  text-align: center;
+  padding: 20px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Modals */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background: #2c2c2e;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  color: #fff;
+  text-align: left;
+}
+.modal-content h2 {
+  margin-top: 0;
+}
+.modal-content form input[type="email"],
+.modal-content form input[type="password"],
+.modal-content form input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  background: #1c1c1e;
+  color: #fff;
+  border-radius: 4px;
+}
+.modal-content form button {
+  background: #4ecdc4;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+.modal-content form button:hover {
+  background: #38bfb2;
+}
+
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+  color: #aaa;
+}
+.close:hover {
+  color: #fff;
+}
