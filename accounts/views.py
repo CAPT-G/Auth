@@ -22,6 +22,8 @@ def generate_verification_code():
     return str(random.randint(100000, 999999))
 
 
+from .email_utils import send_verification_email_html
+
 def send_verification_code(email):
     code = generate_verification_code()
     expires = timezone.now() + timedelta(minutes=10)
@@ -34,10 +36,9 @@ def send_verification_code(email):
             'terms_accepted': False
         }
     )
-    subject = "Your Diamond Casino Verification Code"
-    message = f"Welcome to Diamond Casino!\n\nYour verification code is: {code}\n\nThis code expires in 10 minutes."
-    send_mail(subject, message, None, [email])
 
+    # Send HTML-styled branded email
+    send_verification_email_html(email, code)
 
 # 🟢 SIGNUP
 @csrf_protect
