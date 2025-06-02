@@ -9,7 +9,7 @@ services:
       python manage.py collectstatic --noinput
     startCommand: |
       python manage.py migrate --noinput
-      gunicorn AccountAuth.wsgi:application
+      gunicorn AuthAccountProj.wsgi:application
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.11
