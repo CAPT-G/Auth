@@ -9,7 +9,7 @@ from django.conf import settings
 
 def send_verification_email_html(to_email, code):
     subject = "Verify Your Diamond Casino Account"
-    logo_path = 'static/img/gcoin-logo.png'  # Adjust as needed
+    logo_path = 'static/img/casino-logo.png'  # Adjust as needed
 
     # Base64 inline image
     with open(logo_path, 'rb') as f:
