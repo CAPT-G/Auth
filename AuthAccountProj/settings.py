@@ -15,7 +15,7 @@ SECRET_KEY = os.environ['SECRET_KEY']
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS=['accountauth-main.onrender.com','account-auth-rouge.vercel.app']
+ALLOWED_HOSTS=['https://auth-o84k.onrender.com']
 
 # Application definition
 
