@@ -28,7 +28,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django_ratelimit',
-    'accounts.apps.AccountsConfig',
+    'accounts.apps.AuthAccountsProj',
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -63,7 +63,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'AccountAuth.urls'
+ROOT_URLCONF = 'AccountAuthProj.urls'
 
 TEMPLATES = [
     {
@@ -81,7 +81,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'AccountAuth.wsgi.application'
+WSGI_APPLICATION = 'AuthAccountProj.wsgi.application'
 
 # Password validation
 
