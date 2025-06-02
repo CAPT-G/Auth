@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'AccountAuth.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'AuthAccountProj.settings')
 
 application = get_asgi_application()
